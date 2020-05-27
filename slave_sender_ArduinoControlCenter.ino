@@ -23,10 +23,10 @@ static volatile uint8_t arrayIndex;
 
 void setup() {
   Serial.begin(19200);
-  pinMode(13, OUTPUT); //just a example
+  pinMode(13, OUTPUT); //just an example
   pinStatus = digitalRead(13);
   pinMode(12, OUTPUT);
-  pinStatus = digitalRead(12);//just a example
+  pinStatus = digitalRead(12);//just an example
   InitializeArray();
   Wire.begin(HEX_ADRRESS); // join i2c bus with address HEX_ADRRESS 4
   Wire.onRequest(requestEvent); // register request event
