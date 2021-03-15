@@ -39,7 +39,7 @@ void loop() {
   float value;
   uint8_t index;
   value = 37.19;
-  index = 0;//first value has index 0
+  index = 0;//first value is index 0
   writeValuesAsFloatByteArray(value, index);
   digitalWrite(13, pinStatus);
   value = digitalRead(13);
